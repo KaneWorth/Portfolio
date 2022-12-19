@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Background Image */
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Fixes the image in place */
+  background-attachment: fixed;
+  /* Styling image */
+  background-color: #444;
+  background-blend-mode: multiply;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+  margin: 5px 0 5px 0;
+}
+
+/* Nav Bar */
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #333;
+
+  flex-wrap: wrap;
+}
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0 20px 0;
+  flex-basis: calc(150px + 100px);
+}
+.nav-container a:hover {
+  background-color: #444;
+}
+
+/* Main Content */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 40px;
+}
+.main-container h1 {
+  font-size: 48px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px;
+}
+
+/* Resume Page */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 18px;
+  margin: 40px;
+}
+.resume-container li {
+  list-style: none;
+}
+
+/* Portfolio Page */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+/* Item Containers */
+.tax-container,
+.workout-container,
+.website-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* Images */
+.tax-calculator,
+.workout-generator,
+.website-template {
+  height: 300px;
+  width: 300px;
+  background-image: url("images/taxcalculator.png");
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  image-rendering: optimizeQuality;
+  border-radius: 15px;
+}
+.workout-generator {
+  background-image: url("images/workoutgenerator.png");
+}
+.website-template {
+  background-image: url("images/photography.png");
+}
+
+/* Contact Page */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  margin: 40px;
+  gap: 20px;
+}
+/* Email Directly */
+.contact-container a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-container a:hover {
+  color: #444;
+}
+/* Contact Form */
+.yourName,
+.yourEmail,
+.yourMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+/* Submit Button */
+.user-submit {
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: #333;
+}
+.user-submit:hover {
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+}
