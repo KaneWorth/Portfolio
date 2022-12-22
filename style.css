@@ -100,7 +100,9 @@ footer {
 /* Item Containers */
 .tax-container,
 .workout-container,
-.website-container {
+.website-container,
+.to-do-container,
+.shopping-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,9 +112,11 @@ footer {
 /* Images */
 .tax-calculator,
 .workout-generator,
-.website-template {
-  height: 300px;
-  width: 300px;
+.website-template,
+.to-do-list,
+.shopping-list {
+  height: 250px;
+  width: 250px;
   background-image: url("images/taxcalculator.png");
   background-size: cover;
   background-position: center;
@@ -125,6 +129,12 @@ footer {
 }
 .website-template {
   background-image: url("images/photography.png");
+}
+.to-do-list {
+  background-image: url("images/to\ do.png");
+}
+.shopping-list {
+  background-image: url("images/shopping.png");
 }
 
 /* Contact Page */
