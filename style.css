@@ -92,7 +92,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   font-size: 18px;
   margin: 40px;
   flex-wrap: wrap;
@@ -102,7 +102,8 @@ footer {
 .workout-container,
 .website-container,
 .to-do-container,
-.shopping-container {
+.shopping-container,
+.quiz-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +115,8 @@ footer {
 .workout-generator,
 .website-template,
 .to-do-list,
-.shopping-list {
+.shopping-list,
+.multiple-choice-quiz {
   height: 250px;
   width: 250px;
   background-image: url("images/taxcalculator.png");
@@ -135,6 +137,10 @@ footer {
 }
 .shopping-list {
   background-image: url("images/shopping.png");
+}
+.multiple-choice-quiz {
+  background: url("images/multiple-choice-quiz.png");
+  background-position: center;
 }
 
 /* Contact Page */
